@@ -1,0 +1,370 @@
+:root{
+    --dark-color:#000;
+    --write-color:#ed1b2e;
+    --dark-red:#7f181b;
+}
+*{
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-color);
+}
+section{
+    margin-top: 20px;
+}
+h2{
+    text-shadow: 0 7px 5px rgb(100, 94, 94);
+    color: var(--write-color);
+    cursor: pointer;
+}
+h2::after{
+    content: "";
+    width: 130px;
+    height: 2px;
+    background-color: var(--dark-red);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -199px;
+}
+h2:hover{
+    color: var(--dark-red);
+}
+h1{
+    /* letter-spacing: 4px; */
+    position: absolute;
+    color: var(--write-color);
+  
+   /* font-weight: bold; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    /* color: var(--write-color);
+    text-shadow: 2px 7px 5px rgb(100, 94, 94); */
+     
+}
+h1 span{
+    color: #fff;
+}
+.inner-active{
+    position: absolute;
+    border-left: 5px solid var(--write-color);
+    left: 25%;
+    top: 35%;
+    transform: translate(-35%, -25%);
+    color: #fff;
+    padding-left: 10px;
+    font-size: xx-large;
+}
+.des-inner{
+    position: absolute;
+    padding: 0 230px;
+    
+    top: 80%;
+    transform: translateY(-80%);
+    color: #777;
+
+}
+
+/* section header starts */
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: var(--write-color);
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--dark-red);
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active{
+    color: #fff;
+}
+.navbar .navbar-brand{
+    color: var(--write-color);
+    font-size: 30px;
+}
+.navbar .navbar-brand span{
+    color: #fff;
+    font-size: 25px;
+
+}
+.navbar .navbar-toggler{
+    color: var(--write-color);
+    font-size: 25px;
+    border-color: var(--write-color);
+    text-align: center;
+}
+/* .carousel-item .describtion button:focus, */
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* section header ends */
+/* ============================================================================= */
+/* section home starts */
+.carousel-item img{
+    height: 800px;
+}
+.carousel-item .deck{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: #fff;
+}
+.carousel-item .deck span{
+    color: var(--write-color);
+}
+.carousel-item .deck button{
+    background-color: var(--write-color);
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgb(90, 82, 82);
+    font-size: large;
+    font-weight: 600;
+    padding: 7px 15px;
+}
+.carousel-item .deck button:hover{
+    color: var(--dark-red);
+}
+.btnn{
+    background-color: var(--write-color);
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgb(90, 82, 82);
+    font-size: large;
+    font-weight: 600;
+    padding: 7px 15px; 
+    transition: 0.5s;
+}
+.btnn:hover{
+    color: var(--dark-red);
+    font-size: x-large;
+    
+    
+}
+/* section home ends */
+/* =================================================== */
+/* about section starts */
+.img-about{
+    height: 600px;
+    width: 500px;
+    border: 10px solid var(--dark-color);
+    outline: 2px solid var(--write-color); 
+}
+.img-about:hover{
+    opacity: 0.5;
+    justify-content: space-between;
+}
+svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+    color: var(--write-color);
+    padding-right: 10px;
+    font-size: 25px;
+}
+/* about section ends */
+/* ======================================================================================== */
+/* features section starts */
+.featu{
+    width: 170px;
+    height: 2px;
+    background-color: var(--dark-red);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.all{
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #777;
+}
+.all:hover{
+    font-size: 50px;
+    color: #fff;
+}
+.features .icon-color{
+    width: 150px;
+    height: 150px;
+}
+.featurres-item img{
+    width: 630px;
+    height: 500px;
+    outline: 20px solid #000;
+    position: relative;
+}
+/* ============================ */
+.features{
+    overflow: hidden;
+} 
+.featurres-item{
+    width: 50%;
+    float: left; 
+    margin-bottom: 25px;
+    position: relative;
+    padding: -50px;
+}
+.lear-info{
+    width: 60%;
+    margin: 65px auto;
+    z-index: -5; 
+}
+.lear-info h4{
+    color: #fff;
+    padding: 10px 0;
+}
+.lear-info p{
+    padding: 20px 0;
+}
+.lear-info span{
+    color: #fff;
+}
+.layer-content{
+    position: absolute;
+    left: 13px;
+    background-color: rgba(175, 45, 45, 0.5);
+    opacity: 1;
+    transition: opacity 0.5s;
+    z-index: 1;
+    bottom: 0;
+    visibility: hidden;
+    cursor: pointer;
+}
+.featurres-item:hover .layer-content{
+    visibility:visible;
+    width: 96%;
+    height: 100%;
+}
+/* ************************* */
+.featurres-item img{
+    border-bottom: 2px solid var(--dark-red);
+    border-left: 2px solid #777;
+}
+
+.card-title{
+    color: #fff;
+
+}
+.card-title:hover{
+    font-size: x-large;
+    transition: 0.5s;
+
+}
+/* features section ends */
+.trainers .card-body p{
+    color: #777;
+}
+.trainers .card img{
+    width: 304px;
+    height: 395px;
+}
+/* ==================================================================== */
+/* pricing section starts */
+#pricing .card{
+    background-color: rgb(26, 23, 23);
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgb(90, 82, 82);
+}
+#pricing .card ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+#pricing .card h6 span{
+    color: var(--write-color);
+    font-size: 35px;
+}
+#pricing .midel p{
+    color: #555;
+}
+#pricing .card a{
+    width: fit-content;
+    margin: auto;
+}
+/* pricing section ends */
+/* =================================================================== */
+/* instructions section starts */
+
+.instructions h4{
+    color: #fff;
+    font-size: 50px;
+}
+.instructions .content >p{
+    color: var(--write-color);
+}
+.instructions .instruck h5{
+    color: #fff;
+}
+.instructions .instruck p{
+    color: #777;
+}
+/* instructions section ends */
+
+/* =================================================================== */
+/* forms */
+.forms{
+    color: #fff;
+    background-image: url(../image/banner-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 50px 100px;
+    opacity: 0.7;
+}
+
+
+.forms input{
+    background-color:transparent;
+    color: #fff;
+    box-shadow: none;
+}
+.forms label ::placeholder{
+    color: #fff;
+}
+/* =================================================================== */
+
+/* start footer */
+footer{
+    background-color: var(--dark-color);
+}
+footer .list-style{
+    list-style: none;
+}
+footer .copyright > span {
+    color: var(--write-color);
+}
+footer .copyright p span{
+    color: var(--text-color);
+}
+footer .contact ul svg{
+    width: 20px;
+    height: 20px;
+}
+footer img{
+    background-color: rgb(56, 51, 51);
+}
+.copyright{
+    background-color: var(--write-color);
+    padding-top: 12px;
+    position: relative;
+    bottom: -40px;
+    height: 50px;
+    color: #fff;
+  
+}
+/* end footer */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--write-color);
+  }
+
+
+
+
+
+
+
